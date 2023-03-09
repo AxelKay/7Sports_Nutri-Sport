@@ -1,0 +1,223 @@
+html,body{
+	background: #c847ff;
+    background: -webkit-linear-gradient(0deg, #c847ff 0%, #373fb2 100%);
+    background: linear-gradient(0deg, #c847ff 0%, #373fb2 100%);
+	}
+	
+	header{
+		margin:0px;
+		width:100%;
+		height:130px;
+		background-color:royalblue;
+		margin-bottom:10px;
+		border-bottom:5px solid #028090;
+	}
+	
+	h1{
+		color:#264653;
+		text-align:center;
+		font-size:40px;
+		font-family: "Goudy Bookletter 1911", sans-serif;
+	}
+	
+	h2{
+		color:#E6E49F;
+		font-size:30px;
+		font-family: "Goudy Bookletter 1911", sans-serif;
+	
+	}
+	
+	h2.titre{
+		color:#fff;
+		font-size:50px;
+		padding:0px;
+		margin:0px;
+		position:absolute;
+		left:130px;
+		top:20px;
+		font-family: "Goudy Bookletter 1911", sans-serif;
+		animation-name:test2;
+		animation-iteration-count: infinite;
+		animation-duration:4s;
+		animation-timing-function: ease;
+	}
+	
+	h3{
+		color:#E6E49F;
+		font-size:30px;
+		font-family: "Goudy Bookletter 1911", sans-serif;
+	
+	}
+	
+	@keyframes test2 {
+		0% {top:20px;}
+		50% {top:50px;}
+		100% {top:20px;}
+		
+	}
+	
+	p{
+		color:blue;
+		font-size:20px;
+		font-family: 'poppins', sans-serif;
+	}
+	
+	#logo{
+		display:block;
+		width:120px;
+		height:120px;
+		background-image:url("logo.JPG");
+		background-size:120px;
+		position:relative;
+		transition:0.2s;
+	
+	
+	}
+	
+	#logo:hover{
+		background-image:url("logo2.JPG");
+		width:120px;
+		height:120px;
+		
+	}
+	
+	
+	footer{
+		position:relative;
+		width:100%;
+		height:30px;
+		display:block;
+		background-color: #52b788;
+		padding:5px;
+	}
+	
+	#globals{
+		position:relative;
+		width:1000px;
+		height:900px;
+		left:50%;
+		margin-left:-600px;
+		background-color:#83c5be;
+		margin-bottom:10px;
+		border:3px solid #003049;
+	}
+	
+	.articles{
+		position: relative;  /*pour mettre les 2 articles l'un en dessous de l'autre*/
+		width: 960px;
+		height: 420px;
+		background-color: #168aad;
+		float:left;
+		/* gestion des marges entre les 2 articles et avec haut du cadre*/
+		padding: 5px;
+		margin: 10px;
+		/*rajouter seulement pour side_bar*/
+		float:left;
+		border:2px solid #003049;
+	}
+	
+	.box
+	{
+		position: fixed;
+		width:310px;
+		height:1200px;
+		top:-300px;
+		left:-170px;
+		background-image:url("effet.png");
+		animation: fondanimé 4s linear infinite;
+	}
+	
+	.box2
+	{
+		position: fixed;
+		width:310px;
+		height:1200px;
+		top:-300px;
+		left:1000px;
+		background-image:url("effet2.png");
+		animation: fondanimé 4s linear infinite;
+	}
+	
+	@keyframes fondanimé{
+		0% {top:50px;}
+		0% {top:0px;}
+		
+	}
+	
+	nav{
+		position: fixed;
+		display:flex;
+		width:900px;
+		height:auto;
+		left:83%;
+		top:40px;
+		animation-name:test1;
+		animation-duration:4s;
+		overflow: hidden;
+	}
+	
+	@keyframes test1{
+		0% {left:100%;}
+		50% {left:83%;}
+		
+	}
+	
+	nav ul{
+		display:flex;
+		list-style-type:none;
+		flex-direction: column;
+	}
+	
+	nav ul li{
+		position:relative;
+		float:left;
+	}
+	
+	nav ul li a{
+		display:flex;
+		width:150px;
+		height:25px;
+		justify-content: center;
+		align-items: center;
+		background:linear-gradient(#4cc9f0,#4895ef);
+		margin:30px;
+		padding:2px;
+		text-align:center;
+		text-decoration:none;
+		font-family:"QCR A Std",monospace;
+		transition:0.2s;
+		border:2px outset #636e72;
+		flex-direction: column;
+		animation-name:test;
+		animation-iteration-count: infinite;
+		animation-duration:4s;	
+		left:83%;
+	}
+	
+	@keyframes test {
+		0% {left:70%;}
+		50% {left:83%;}
+		
+	}
+	nav ul li a:hover{
+		color:#003049;
+		letter-spacing: 2px;
+		box-shadow: 0 0 35px #132a13;
+		padding:5px;
+		left:60%;
+		width:170px
+		background:linear-gradient(#4cc9f0,#3f37c9);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
